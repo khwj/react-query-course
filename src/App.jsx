@@ -14,9 +14,9 @@ function App() {
       )}
       <h1>Issue Tracker</h1>
       <Routes>
-        <Route path="/" element={<Issues />} />
-        <Route path="/add" element={<AddIssue />} />
-        <Route path="/issue/:number" element={<Issue />} />
+        <Route key="home" path="/" element={<Issues />} />
+        <Route key="add" path="/add" element={<AddIssue />} />
+        <Route key="issue" path="/issue/:number" element={<Issue />} />
       </Routes>
     </div>
   );
